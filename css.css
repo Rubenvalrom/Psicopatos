@@ -1,0 +1,60 @@
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#juego{
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    padding:0;
+}
+
+#boton{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: rgb(205, 3, 3);
+    text-align: center;
+}
+
+.boton{
+    font-size: 1.3rem;
+    padding: 1em;
+}
+
+#botonEmpezar{
+    background: grey;
+    color: black;
+    border: darkgray 0.2rem solid;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 55px;
+}
+.celda {
+    box-sizing: border-box;
+    width: 50%;
+    height: 50%;
+    opacity: 0.2;
+    float: left;
+    transition-duration: .2s;
+    transform-origin: center center;
+}
+
+.celda.active {
+    transform: scale(1.14);
+    opacity: 1;
+}
+
+.celda:nth-child(1) { background:red; border-top-left-radius: 75%; }
+.celda:nth-child(2) { background:yellow;border-top-right-radius: 75%;}
+.celda:nth-child(3) { background:blue; border-bottom-left-radius: 75%; }
+.celda:nth-child(4) { background:green; border-bottom-right-radius: 75%; }
+
+
